@@ -26,11 +26,8 @@ function display (result){
 const btn = document.querySelectorAll("button");
 btn.forEach((el) => {
   el.addEventListener('click',  (event) => {
-    const guessNumber = event.currentTarget.value;
-    console.log(answer);
-    console.log(guessNumber);
-    const result = comparison (answer, guessNumber)
-    display (result);
+     console.log(event.target.value + "のボタンがクリックされました!")
+     console.log(event.currentTarget.value + "のボタンがクリックされました!")
   });
 })
 

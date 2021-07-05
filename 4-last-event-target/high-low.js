@@ -23,7 +23,7 @@ function display (result){
   div.innerHTML = result;
 }
 
-const btn = document.querySelectorAll("div");
+const btn = document.querySelectorAll("button");
 btn.forEach((el) => {
   el.addEventListener('click', function (event) {
     console.log(event.target.value + "のボタンがクリックされました!")
