@@ -25,15 +25,10 @@ function display (result){
 
 const btn = document.querySelectorAll("button");
 btn.forEach((el) => {
-  el.addEventListener('click',  (event) => {
-    const guessNumber = event.currentTarget.value;
-    console.log(answer);
-    console.log(guessNumber);
-    const result = comparison (answer, guessNumber)
-    display (result);
-  });
+  el.addEventListener('click', function (event) {
+    console.log(event.currentTarget.value + "のボタンがクリックされました!")
+  })
 })
-
 // answerの初期値をリセットする方法がわからん。
 
 
